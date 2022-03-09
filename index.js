@@ -6,7 +6,7 @@ app.set('view engine','ejs');
 
 app.get('/', (req, res) => {
   var title = 'Our Home Page';
-  res.render('index',{title:title});
+  res.render('index',{'title':title});
 });
 
 app.listen(port, () => {
