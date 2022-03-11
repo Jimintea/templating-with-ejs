@@ -12,10 +12,20 @@ app.get('/', (req, res) => {
   res.render('pages/index',{'title':title});
 });
 
-///about-us
-app.get('/about-us', (req, res) => {
-  var title = 'Our About Us Page';
-  res.render('pages/about-us',{'title':title});
+///soccer
+app.get('/soccer', (req, res) => {
+  var title = 'Our Soccer Page';
+  res.render('pages/soccer',{'title':title});
+});
+
+app.get('/basketball', (req, res) => {
+  var title = 'Our Basketball Page';
+  res.render('pages/basketball',{'title':title});
+});
+
+app.get('/football', (req, res) => {
+  var title = 'Our Football Page';
+  res.render('pages/football',{'title':title});
 });
 
 app.listen(port, () => {
